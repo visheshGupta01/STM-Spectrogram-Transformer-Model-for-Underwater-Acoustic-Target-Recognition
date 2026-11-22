@@ -44,7 +44,7 @@ def _split_recordings(frame, seed):
     train_paths = set(paths[:n_train])
     val_paths = set(remaining[:n_val])
     test_paths = set(remaining[n_val:])
-    return train_paths, val_paths, test_paths
+    return {str(p) for p in train_paths}, {str(p) for p in val_paths}, {str(p) for p in test_paths}
 
 def prepare_clips(metadata_csv, audio_root, output_dir, sample_seconds=5.0, target_sr=16000, seed=42):
     meta = load_metadata(metadata_csv, audio_root)
