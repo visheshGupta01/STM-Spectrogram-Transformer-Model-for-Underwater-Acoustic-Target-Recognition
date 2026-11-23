@@ -1,0 +1,92 @@
+{
+  "dataset": "B",
+  "feature": "mfcc",
+  "model": "resnet18",
+  "test_accuracy": 0.03508771929824561,
+  "best_validation_accuracy": 0.4066193853427896,
+  "best_epoch": 48,
+  "test_samples": 228,
+  "classification_report": {
+    "A": {
+      "precision": 0.4444444444444444,
+      "recall": 0.2,
+      "f1-score": 0.27586206896551724,
+      "support": 40.0
+    },
+    "B": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "C": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "D": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 0.0
+    },
+    "E": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 188.0
+    },
+    "accuracy": 0.03508771929824561,
+    "macro avg": {
+      "precision": 0.08888888888888888,
+      "recall": 0.04,
+      "f1-score": 0.05517241379310345,
+      "support": 228.0
+    },
+    "weighted avg": {
+      "precision": 0.07797270955165693,
+      "recall": 0.03508771929824561,
+      "f1-score": 0.04839685420447671,
+      "support": 228.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      8,
+      0,
+      6,
+      26,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      25,
+      152,
+      1,
+      0
+    ]
+  ],
+  "device": "cuda"
+}
